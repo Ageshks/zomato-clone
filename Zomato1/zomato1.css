@@ -1,0 +1,490 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    width: auto;
+    height: 8%;
+    font-family: Okra, Helvetica, sans-serif;
+}
+header{
+    background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+    background-size: cover;
+    position: relative;
+    height: 90vh;
+}
+nav{
+    display: flex;
+    margin-right: 15%;
+    justify-content: end;
+}
+.main{
+  width: 400px;
+  height: 65px;
+}
+nav button{
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 21px;
+    border: 0;
+    padding: 20px 20px;
+}
+
+.logo{
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.zomato-logo
+{
+  width: 313px;
+}
+.logo h1{
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 400;
+}
+.has{
+    text-align: center;
+}
+.has h2{
+    font-weight: 100;
+    font-size: 36px;
+    align-items: center;
+}
+.has img{
+    height: 30px;
+}
+.pr{
+    text-align: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 1px;
+    height: 106px;
+}
+.pr p{
+  margin: 0px;
+  width: 1106px;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: rgb(105, 105, 105);
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+
+.button{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+.btns{
+  width: 30%;
+  
+  cursor: pointer;
+  border: 1px rgb(235, 229, 229) solid;
+  border-radius: 5px;
+  margin: 1% .8%;
+  
+
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.btns:hover{
+  box-shadow: rgba(28, 28, 28, 0.08) 5px 2px 2px;
+}
+.btn p{
+  font-size: 19px;
+}
+
+/* ----------------------------------footer------------------------------------- */
+footer{
+  
+  background:rgb(248, 248, 248);
+  
+}
+.footer-data{
+ width: 100%;
+ position: relative;
+}
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 91px;
+  margin-top: 20px;
+}
+.footer-middle{
+  display: flex;
+  justify-content:space-between;
+  height: 400px;
+  flex-wrap: wrap;
+}
+.footer-middle1{
+  margin-left: 35px;
+  height: 321px;
+}
+.footer-middle2{
+  height: 273px;
+}
+.footer-middle3{
+  height: 200px;
+}
+
+.footer-middle5{
+  height: 274px;
+}
+ul li{
+  list-style-type: none;
+  padding: 10px;
+}
+ol{
+  list-style-type: none;
+}
+.footer-middle h6{
+  font-size: 19px;
+  font-weight: 100;
+  height: 0px;
+}
+.footer-middle4{
+  height: 256px;
+}
+.buttons{
+  margin-top: 89px;
+  margin-left: 40px;
+  width: 155px;
+  height: 88px;
+}
+.buttons img{
+  width: 154px;
+  height: 43px;
+}
+.social{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 0;
+    width: 158px;
+    align-items: center;
+}
+
+.country-dropdowns .country-btn{
+  height: 34px;
+  width: 73px;
+}
+.country-dropdowns {
+  background-color: white;
+  border: 2px rgb(0, 0, 0) solid;
+  border-radius: 5px;
+}
+.country-btn{
+  border: none;
+}
+.language-selection{
+  background-color: rgb(255, 251, 251);
+  border: 2px black solid;
+  border-radius: 5px;
+}
+.country-dropdowns img{
+  width: 20px;
+  height: 20px;
+}
+.language-btn{
+  border: none;
+  height: 34px;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  width: 254px;
+}
+/*-----------------------------hidden-------------------------------------*/
+#sidebar-active{
+  display: none;
+}
+.links-container{
+  display: none;
+}
+.open-sidebar-button{
+  display: none;
+}
+.links-container{
+  display: none;
+}
+.end{
+  display: block;
+}
+
+@media screen and (max-width:768px)
+{
+    nav{
+    display: none;
+    }
+    .open-sidebar-button{
+      display: block;
+    }
+    .links-container{
+      display: block;
+      flex-direction:column;
+      align-items:flex-start;
+      position: absolute;
+      text-decoration: none;
+      top: 0;
+      color: black;
+      right: 114%;
+      margin-top: 10px;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+      transition: 0.75s ease-in;
+      overflow: hidden;
+      list-style-type: none;
+    }
+    .center-nav i{
+      margin-top: 70px;
+      margin-left: 30px;
+    }
+    .close-sidebar-button{
+      margin-right: 90%;
+    }
+    .center nav a{
+      box-sizing: border-box;
+      height: auto;
+      width: 10%;
+      right: 0%; 
+      left: 0%; 
+      padding: 0px 0px;
+      justify-content: center; 
+      flex-direction: column;
+      display: grid;
+    }
+    .open-sidebar-button, .close-sidebar-button{
+      padding: 20px;
+      display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+      left: 0;
+    }
+    #sidebar-active:checked ~ #overlay{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      top: 0;
+      left: 0;
+      z-index: 9;
+    }
+    nav svg{
+      margin-bottom: 10px;
+      margin-left: 50vh;
+    }
+    .center-nav li a{
+    flex-direction:column ;
+    }
+    nav .nav-list{
+      flex-direction: column;
+      display: grid;
+    }
+    body .center-nav {
+      display: grid;
+      flex-direction: column;
+      align-items: flex-start; 
+      margin-left: 1vh;
+      font-size: larger;
+      height: 50vh;
+      overflow: hidden;
+    }
+    body .center-nav li{
+      padding-top: 0px;
+      padding-bottom: 5px;
+    }
+    .close-sidebar-button{
+      position: absolute;
+      z-index: 50;
+      padding-bottom: 1px;
+      padding-top: 1px;
+      display: flex;
+      top: 1px;
+      right: 10px; 
+    }
+    #sidebar-active:checked ~ .close-sidebar-button{
+      position: absolute;
+      display: flex;
+      top: 1px;
+      right: 10px;
+      margin-top: 0; 
+    }
+  header{
+    background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+    background-size: cover;
+    position: relative;
+    height: 108vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .logo h1{
+    font-size: 2.3rem;
+    font-weight: 100;
+  }
+  .material-symbols-outlined img{
+    padding-left: 70%;
+  }
+  .pr{
+    width: 96%;
+    height: 101px;
+    margin-left: 24px;
+  }
+  .pr p{
+    font-size: 17px;
+  }
+  .footer-middle5{
+    position: relative;
+    width: 179px;
+  }
+  .footer-top{
+    margin-left: 10px;
+    width: 743px;
+  }
+  .buttons img {
+    width: 74px;
+    height: 40px;
+  }
+  .buttons{
+    width: 78px;
+  }
+  .social{
+    width: 25px;
+  }
+  .footer-middle h6 {
+    margin-left: 39px;
+  }
+  .test{
+    margin-left: 1px;
+  }
+  .test1{
+    margin-left: 1px;
+  }
+  .div{
+    margin-left: 10px;
+  }
+}
+@media screen and(max-width:744px) {
+  .footer-middle5{
+    width: 19%;
+  }
+}
+
+@media screen and (max-width:600px){
+  header{
+    height: 138vh;
+    width: 138%;
+  }
+  .logo{
+    margin-top: 102px;
+  }
+  .logo-h1{
+    font-size: 2.3rem;
+    font-weight: 100;
+  }
+
+  footer .end{
+    width: 100%;
+  }
+  .footer-links .buttons img {
+    width: 10.7rem;
+    height: 3rem;
+  }
+  .footer-top{
+    width: 91%;
+    margin-left: 20px;
+  }
+   .buttons{
+    padding: 12px 94px;
+  }
+  .buttons img {
+    width: 5rem;
+  }
+  .test1{
+    width: 217px;
+  }
+  .has h2{
+    margin-left: 79px;
+        font-weight: 100;
+        font-size: 55px;
+        width: 680px;
+  }
+  .pr{
+    width: 800px;
+    height: 122px;
+  }
+  .pr p{
+    font-size: 19px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .logo {
+      margin-top: 102px;
+  }
+  header{
+    background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+    background-size: cover;
+    position: relative;
+    height: 55vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  .logo h1{
+    margin-top: 30px;
+    font-size: 19px;
+  }
+  .has h2{
+    width: 224px;
+    font-size: 29px;
+    margin-left: 102px;
+  }
+  .pr{
+    width: 367px;
+    height: 123px;
+  }
+  .pr p{
+    font-size: 15px;
+  }
+  .btns{
+    width: 68%;
+  }
+  .social{
+    display: none;
+  }
+  .footer-top img{
+    width: 106px;
+  }
+  .country-dropdowns img{
+    width: 39px;
+  } 
+
+}
+
+
+
+
+
+
